@@ -5,7 +5,7 @@
 var money = 0
 var input = ''
 var sizeP = 15
-var size = 250
+var size = 275
 var chocoP = 0
 var fillP = 0
 var pergram = 0.094
@@ -83,7 +83,7 @@ function sWallet() {
 	fillP = Number(price) + chocoP
 	fillP = Math.round(fillP)
 	money = fillP
-	$('body').append('<p id="money">R$' + money + ',90</p>')
+	$('#wallet').append('<figcaption id="money">R$' + money + ',90</figcaption>')
 }
 
 $(document).ready(function() {
